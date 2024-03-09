@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	flex-direction: column;
+}
+
+#game-container {
+	max-width: 800px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cat-image {
+	margin-top: 400px;
+    width: 200px;
+    cursor: pointer;
+	display: block;
+}
+
+#cat-count {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#resources {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#shop {
+    text-align: center;
+}
+
+#shop button {
+    margin: 1px;
+}
+#upgrades button {
+    margin: 1px;
+}
+#achievements {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.achievement {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+#background-cats {
+  position: fixed;
+  z-index: -1;
+}
+#cat-breed-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+#zoom-message-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+#zoom-message2-container {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.hide-message {
+  animation: fadeOut 2s forwards;
+}
+#collectBtn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #FF69B4;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#inventoryDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.inventoryItem {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+

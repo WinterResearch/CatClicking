@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.9">
+    <title>Cat Clicker Kingdom</title>
+    <link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	<div id="zoom-message-container">
+	  <p id="zoom-message">Use Ctrl + Mouse Wheel to zoom in/out if needed. Cats may be off screen!!</p>
+	</div>
+	<div id="zoom-message2-container">
+	  <p id="zoom-message2">Dont let your cats get sad or they will run away!!</p>
+	</div>
+    <div id="game-container">
+		<div id="background-cats"></div>
+
+        <img id="cat-image" src="assets/cat.png" alt="Cat">
+        <div id="cat-count">Cats: 0</div>
+			<button id="cat-button">Click me for Cat Coins!</button>
+
+		<div id="cat-coin-count">Cat Coins: 0</div>
+		<button id="buy-cat">Buy Cat (10 Cat Coins)</button>
+
+		<div id="resources">
+			<div>Warm milk: <span id="milk-count">0</span></div>
+			<div>Cat homes: <span id="home-count">0</span></div>
+			<div>Toys: <span id="toy-count">0</span></div>
+			<div>Grooming items: <span id="grooming-count">0</span></div>
+		</div>
+		<div id="cat-mood">Mood: <img id="heart-image"></div>
+		
+		<h2>Mood Boosters</h2>
+		<div id="mood-shop">
+			<button id="buy-milk">Buy Warm milk (10 Cat Coins)</button>
+			<button id="cuddle-button" class="button">Cuddle your cats</button>
+
+		</div>
+		
+		<div id="cat-cuddle-count">Kitty Cuddles: 0</div>
+		<button id="collectBtn">Buy Expensive Rare Collectables</button>
+		<div id="inventoryDisplay"></div>
+
+		<div id="shop">
+			<h2>Cat Supplies</h2>
+			<div>
+				<button id="buy-home">Buy Cat home (100 Cat Coins)</button>
+				<button id="buy-toy">Buy Toy (200 Cat Coins)</button>
+				<button id="buy-grooming">Buy Grooming item (300 Cat Coins)</button>
+			</div>
+			<div>
+				<button id="upgrade-home">Upgrade Cat homes (400 Cat Coins)</button>
+				<button id="upgrade-toy">Upgrade Toys (500 Cat Coins)</button>
+				<button id="upgrade-grooming">Upgrade Grooming items (1000 Cat Coins)</button>
+			</div>
+		</div>
+		<div id="upgrades">
+		  <h2>Upgrades</h2>
+		  <button id="click-power-upgrade">Click Power Upgrade (50 cats)</button>
+		  <button id="milk-efficiency-upgrade">Milk Efficiency Upgrade (100 cats)</button>
+		  <button id="home-efficiency-upgrade">Home Efficiency Upgrade (200 cats)</button>
+		  <button id="toy-efficiency-upgrade">Toy Efficiency Upgrade (400 cats)</button>
+		  <button id="grooming-efficiency-upgrade">Grooming Efficiency Upgrade (800 cats)</button>
+		  <button id="cost-reduction-upgrade">Cost Reduction Upgrade (1000 cats)</button>
+		</div>
+
+		<div id="cat-breeds">
+		  <h2>Cat Breeds</h2>
+		  <ul id="cat-breed-list"></ul>
+		</div>
+		
+
+		
+		<div id="achievements">
+			<h2>Achievements</h2>
+			<ul id="achievement-list"></ul>
+		</div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
